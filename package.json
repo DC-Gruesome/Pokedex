@@ -1,5 +1,5 @@
 {
-  "homepage": "https://dc-gruesome.github.io/Pokedex",
+  "homepage": "git://dc-gruesome.github.io/Pokedex",
   "name": "pokemon",
   "version": "0.1.0",
   "private": true,
