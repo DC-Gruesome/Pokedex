@@ -1,0 +1,104 @@
+html, body {
+  background: #7c7c7c;
+  background: -moz-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #7c7c7c), color-stop(12%, #868686), color-stop(25%, #8f8f8f), color-stop(39%, #797979), color-stop(50%, #656565), color-stop(51%, #454545), color-stop(60%, #515151), color-stop(76%, #646464), color-stop(91%, #595959), color-stop(100%, #535353));
+  background: -webkit-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
+  background: -o-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
+  background: -ms-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
+  background: linear-gradient(135deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
+  background-size: stretch;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c7c7c', endColorstr='#535353',GradientType=1 );
+  font-family: sans-serif;
+  text-align: center; }
+
+.App {
+  display: block;
+  text-align: center;
+  text-transform: capitalize; }
+  .App div.name {
+    border-color: #d8dfe0;
+    border-bottom-style: outset;
+    border-bottom-width: 3px;
+    line-height: 2rem;
+    width: 100%; }
+  .App div.number, .App div.height, .App div.weight, .App div.types, .App div.speed, .App div.special-defense, .App div.special-attack, .App div.defense, .App div.attack, .App div.hp {
+    float: left;
+    line-height: .75rem;
+    padding: .5rem;
+    text-align: left;
+    text-transform: capitalize;
+    width: 45%; }
+  .App div.description {
+    clear: left;
+    display: inline-block;
+    line-height: .75rem;
+    padding: .5rem;
+    text-align: left; }
+
+div.pokemonBattleInfo {
+  border-radius: 50%; }
+
+img.damaged {
+  transition: all .35s ease-out; }
+
+div.pokemonBattleInfo img.damaged {
+  border-color: #FF0000;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem #FF0000;
+  transform: scale(0.8); }
+
+div.pokemonBattlePreview {
+  width: 100%; }
+  div.pokemonBattlePreview .PokemonCombatant {
+    display: inline-block;
+    float: left;
+    margin: 7.5% auto;
+    padding: 1rem;
+    width: 45%; }
+  div.pokemonBattlePreview div.versus {
+    float: left;
+    margin: 20% 0;
+    width: 4%; }
+  div.pokemonBattlePreview div.combatantClearFloat {
+    clear: both; }
+
+div.inBattleMode {
+  text-align: center; }
+
+.pokemonDetailsInfo {
+  background: #b7c4c7;
+  border-color: #d8dfe0;
+  border-style: inset;
+  border-width: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  width: 100%; }
+
+div.selectionScreen {
+  display: inline-block;
+  padding: 2rem; }
+
+.pokemonSelect {
+  -ms-flex-preferred-size: 40%;
+  box-sizing: border-box;
+  flex-basis: 40%;
+  padding: 1rem; }
+
+.pokemonSelectTile {
+  background: #b7c4c7;
+  border-color: #d8dfe0;
+  border-style: inset;
+  border-width: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  display: inline-block;
+  height: 140px;
+  width: 154px; }
+
+.battle {
+  clear: both; }
+
+.clearFloat {
+  clear: both; }
+
+/*# sourceMappingURL=App.css.map */
