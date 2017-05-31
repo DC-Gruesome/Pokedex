@@ -87,9 +87,7 @@ random(num) {
           {this.props.pokemonToBattle[this.state.attackingPokemon].name} wins!!!
         </div>
 
-        <button onClick={this.props.handPlayAgain}>
-          Play again
-        </button>
+          <i className="fa fa-repeat" aria-hidden="true" onClick={this.props.handPlayAgain}></i>
 
       </div>
 

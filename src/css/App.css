@@ -1,14 +1,16 @@
+@font-face {
+  font-family: PokemonFont;
+  src: url("../font/PokemonFont/PokemonGB.ttf"); }
 html, body {
-  background: #7c7c7c;
-  background: -moz-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #7c7c7c), color-stop(12%, #868686), color-stop(25%, #8f8f8f), color-stop(39%, #797979), color-stop(50%, #656565), color-stop(51%, #454545), color-stop(60%, #515151), color-stop(76%, #646464), color-stop(91%, #595959), color-stop(100%, #535353));
-  background: -webkit-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
-  background: -o-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
-  background: -ms-linear-gradient(-45deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
-  background: linear-gradient(135deg, #7c7c7c 0%, #868686 12%, #8f8f8f 25%, #797979 39%, #656565 50%, #454545 51%, #515151 60%, #646464 76%, #595959 91%, #535353 100%);
-  background-size: stretch;
+  background: white;
+  background-attachment: fixed;
+  background-image: url(../imgs/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c7c7c', endColorstr='#535353',GradientType=1 );
-  font-family: sans-serif;
+  font-family: PokemonFont;
+  font-size: 9px;
   text-align: center; }
 
 .App {
@@ -16,9 +18,6 @@ html, body {
   text-align: center;
   text-transform: capitalize; }
   .App div.name {
-    border-color: #d8dfe0;
-    border-bottom-style: outset;
-    border-bottom-width: 3px;
     line-height: 2rem;
     width: 100%; }
   .App div.number, .App div.height, .App div.weight, .App div.types, .App div.speed, .App div.special-defense, .App div.special-attack, .App div.defense, .App div.attack, .App div.hp {
@@ -49,6 +48,9 @@ div.pokemonBattleInfo img.damaged {
 
 div.pokemonBattlePreview {
   width: 100%; }
+  div.pokemonBattlePreview .BattlePreviewTitle {
+    font-size: 2em;
+    font-weight: 700; }
   div.pokemonBattlePreview .PokemonCombatant {
     display: inline-block;
     float: left;
@@ -66,13 +68,11 @@ div.inBattleMode {
   text-align: center; }
 
 .pokemonDetailsInfo {
-  background: #b7c4c7;
-  border-color: #d8dfe0;
-  border-style: inset;
-  border-width: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   cursor: pointer;
+  opacity: .9;
   width: 100%; }
+  .pokemonDetailsInfo .name {
+    font-size: 2em; }
 
 div.selectionScreen {
   display: inline-block;
@@ -85,15 +85,69 @@ div.selectionScreen {
   padding: 1rem; }
 
 .pokemonSelectTile {
-  background: #b7c4c7;
-  border-color: #d8dfe0;
-  border-style: inset;
-  border-width: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   cursor: pointer;
   display: inline-block;
   height: 140px;
-  width: 154px; }
+  margin: .5rem;
+  opacity: .75;
+  width: 150px; }
+
+.pokemonSelectTileContainer {
+  cursor: pointer;
+  display: inline-block; }
+
+.pokemonImage {
+  display: block;
+  height: 70%;
+  margin-top: auto;
+  padding: 1rem;
+  width: 100%; }
+
+.pokemonName {
+  display: inline-block;
+  font-size: 10px;
+  height: 25%;
+  margin-top: 1rem;
+  padding: 1rem;
+  word-wrap: break-word; }
+
+.loadingScreen {
+  height: auto;
+  margin: 10% 0; }
+
+.loadingText {
+  color: blue;
+  font-family: PokemonFont;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 3% 18%;
+  text-align: center; }
+
+.fa-spin {
+  animation: fa-spin 3s infinite linear;
+  animation-direction: reverse; }
+
+.fa-fw {
+  text-align: center;
+  width: 3em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto; }
+
+.fa-superpowers {
+  color: yellow;
+  font-size: 10em;
+  text-shadow: 8px 8px 16px #FF0000; }
+
+.fa-repeat, .fa-plus-square-o, .fa-minus-square-o, .fa-trash-o {
+  color: black;
+  font-size: 3em;
+  margin: 3%; }
 
 .battle {
   clear: both; }

@@ -11,11 +11,7 @@ class PokemonCombatant extends Component {
 
           <PokemonDetailsInfo currentPokemon={this.props.pokemonData}/>
 
-          <button 
-                  className="remove" 
-                  onClick={() => this.props.handleCombatantRemove(this.props.pokemonData.name)}>
-                  Remove
-          </button>
+                  <i class="fa fa-trash-o" aria-hidden="true" onClick={() => this.props.handleCombatantRemove(this.props.pokemonData.name)}></i>
         </div>
 
       // </div>

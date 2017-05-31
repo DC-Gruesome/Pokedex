@@ -20,7 +20,7 @@ class PokemonBattlePreview extends Component {
       
       <div className="pokemonBattlePreview">
 
-        <div>Pokemon Battle Preview</div>
+        <div className="BattlePreviewTitle">Pokemon Battle Preview</div>
 
 
 

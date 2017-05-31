@@ -13,13 +13,9 @@ class PokemonDetails extends Component {
                           currentPokemon={this.props.currentPokemon}
                           currentPokemonDesc={this.props.currentPokemonDesc}/>
 
-        <button className="select" onClick={this.props.handleDetailsSelect}>
-          select
-        </button>
-
-        <button className="cancel" onClick={this.props.handleDetailsCancel}>
-          cancel
-        </button>
+         <i className="fa fa-plus-square-o" aria-hidden="true" onClick={this.props.handleDetailsSelect}></i>
+        
+         <i className="fa fa-minus-square-o" aria-hidden="true" onClick={this.props.handleDetailsCancel}></i>
 
       </div>
 

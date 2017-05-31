@@ -42,12 +42,12 @@ class PokemonDetailsInfo extends Component {
       
       <div className="pokemonDetailsInfo">
 
+        <div className="name">
+            {this.props.currentPokemon.name}
+        </div>
         <div className="image">
           <img src={require(`../imgs/sprites/${this.props.currentPokemon.id}.png`)} alt={this.props.name}/>
         </div>
-        <div className="name">
-            {this.props.currentPokemon.name}
-          </div>
         <div className="statsContainer">
           <div className="number">
             Pokedex ID: {this.props.currentPokemon.id}
