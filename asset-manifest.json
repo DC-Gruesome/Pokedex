@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.b71e0115.css",
-  "main.css.map": "static/css/main.b71e0115.css.map",
-  "main.js": "static/js/main.80bc2b52.js",
-  "main.js.map": "static/js/main.80bc2b52.js.map",
+  "main.css": "static/css/main.476f30d8.css",
+  "main.css.map": "static/css/main.476f30d8.css.map",
+  "main.js": "static/js/main.a6b849f6.js",
+  "main.js.map": "static/js/main.a6b849f6.js.map",
   "static/media/103.mp3": "static/media/103.9efd2313.mp3",
   "static/media/124.mp3": "static/media/124.cc9a891e.mp3",
   "static/media/125.mp3": "static/media/125.88e04f97.mp3",
@@ -16,5 +16,12 @@
   "static/media/75.mp3": "static/media/75.03a76d8a.mp3",
   "static/media/96.mp3": "static/media/96.6f4c013b.mp3",
   "static/media/97.mp3": "static/media/97.54ce6362.mp3",
+  "static/media/PokemonGB.ttf": "static/media/PokemonGB.831e1f4d.ttf",
+  "static/media/background.jpg": "static/media/background.05aa8c9c.jpg",
+  "static/media/fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
+  "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
+  "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
+  "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
+  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
   "static/media/theme.mp3": "static/media/theme.00abdb23.mp3"
 }
